@@ -17,7 +17,12 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_runtime_dependency "fluentd", "~> 0.12.0"
-  gem.add_runtime_dependency "gcloud", "= 0.6.3"
+  
+  #gem.add_runtime_dependency "gcloud", "= 0.6.3"
+  gem.add_runtime_dependency "fluent-plugin-google-cloud", "= 0.6.2"
+  gem.add_runtime_dependency 'googleauth', '~> 0.6'
+  gem.add_runtime_dependency 'grpc', '~> 1.0'
+  gem.add_runtime_dependency 'json', '~> 1.8'
   gem.add_runtime_dependency "fluent-plugin-buffer-lightening", ">= 0.0.2"
 
   gem.add_development_dependency "bundler"
